@@ -1,0 +1,58 @@
+<!-- *************************************************************************** -->
+
+<h1>Título</h1>
+<p>
+  Escrever um parágrafo <br/>
+  <a href="https://rocketseat.com.br">Ver site</a>  
+</p>
+<img src="https://source.unsplash.com/random" />
+
+<!-- *************************************************************************** -->
+
+/* 
+    exemplo abaixo de uma declaração 
+    seletor seguido de para de chaves ...
+*/
+body {
+    background: red;
+}
+
+body {
+    background: blue;
+}
+
+/* Especificidade - ordem das declarações */
+
+#id {
+  /* peso 100 */
+}
+
+.class {
+  /* peso 10 */
+}
+
+element {
+  /* peso 1 */
+}
+
+<!-- *************************************************************************** -->
+
+<!-- HTML -->
+<p id="unico-1">Isto é um parágrafo</p>
+<p class="classe">Isto é outro parágrafo</p>
+<p>Isto é mais um parágrafo</p>
+
+<!-- CSS -->
+p#unico-1 {
+    color: blue;
+  }
+  
+  .classe {
+    color: green;
+  }
+  p {
+    color: red;
+  }
+
+<!-- *************************************************************************** -->
+
