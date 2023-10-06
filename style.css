@@ -1,4 +1,3 @@
-
 * {
    margin: 0;
    padding: 0;
@@ -33,6 +32,7 @@ body {
    */
    /* todos os comandos acima estão reduzidos abaixo */
    background: var(--bg-url) no-repeat top center/cover;
+   height: 100vh;
 }
 
 body * {
@@ -41,7 +41,8 @@ body * {
 }
 
 #container {
-   width: 360px;
+   width: 100%;
+   max-width: 588px;
    /* height: 712px; */
    /* border: 1px solid red; */
    /* os 2 comandos abaixo ajustam a caixa pela esquerda e pela direita 
@@ -179,6 +180,18 @@ footer {
    text-align: center;
    font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 700px) {
+   :root {
+      --bg-url: url(./assets/bg-desktop.jpg);
+   }
+
+   .light {
+      --bg-url: url(./assets/bg-desktop-light.jpg);
+   }
+}
+
 /* 
 a {
    display: block;
