@@ -11,7 +11,7 @@ function toggleMode() {
    //    html.classList.add("light")
    // }
 
-   // substituindo a imagem na tela
+   // substituindo a imagem na tela quando acionado o botão
    if (html.classList.contains("light")) {
       img.setAttribute("src", "./assets/avatar-light.png")
    } else {
